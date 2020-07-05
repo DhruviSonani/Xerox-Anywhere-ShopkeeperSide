@@ -1,0 +1,880 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Activity.Fragment.EditProfileFragment">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cv_editProfile"
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        card_view:cardCornerRadius="3dp"
+        card_view:cardUseCompatPadding="true">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <TextView
+
+            android:text="Personal Details"
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textSize="22sp"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_height="wrap_content"/>
+
+        <RelativeLayout
+            android:id="@+id/rv_requestTocome"
+            android:layout_marginTop="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="0.10">
+
+        <LinearLayout
+            android:visibility="visible"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:textColor="@android:color/background_dark"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Name" />
+
+                <TextView
+                    android:textColor="@android:color/background_dark"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=":" />
+
+                <TextView
+                    android:id="@+id/tv_et_Name"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:textColor="@android:color/background_dark"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Contact Number" />
+
+                <TextView
+                    android:textColor="@android:color/background_dark"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=":" />
+
+                <TextView
+                    android:id="@+id/tv_ep_mobileNumber"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:textColor="@android:color/background_dark"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Email Id" />
+
+                <TextView
+                    android:textColor="@android:color/background_dark"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=":" />
+
+                <TextView
+                    android:id="@+id/tv_ep_mailId"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center" />
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:textColor="@android:color/background_dark"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Gender" />
+
+                <TextView
+                    android:textColor="@android:color/background_dark"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=":" />
+
+                <TextView
+                    android:id="@+id/tv_et_gender"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center" />
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:textColor="@android:color/background_dark"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Shop Name" />
+
+                <TextView
+                    android:textColor="@android:color/background_dark"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=":" />
+
+                <TextView
+                    android:id="@+id/tv_et_shopName"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center" />
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:textColor="@android:color/background_dark"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Address" />
+
+                <TextView
+                    android:textColor="@android:color/background_dark"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=":" />
+
+                <TextView
+                    android:id="@+id/tv_et_Address"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center" />
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:textColor="@android:color/background_dark"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Licence Number" />
+
+                <TextView
+                    android:textColor="@android:color/background_dark"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=":" />
+
+                <TextView
+                    android:id="@+id/tv_ep_licence"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center" />
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:textColor="@android:color/background_dark"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Shop Time" />
+
+                <TextView
+                    android:textColor="@android:color/background_dark"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=":" />
+
+                <TextView
+                    android:id="@+id/tv_ep_shopTime"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center" />
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+        </RelativeLayout>
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cv_editProfileAmount"
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        card_view:cardCornerRadius="3dp"
+        card_view:cardUseCompatPadding="true">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            <TextView
+
+                android:text="Costs"
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textSize="22sp"
+                android:layout_centerInParent="true"
+                android:textColor="@color/colorPrimaryDark"
+                android:layout_height="wrap_content"/>
+
+                <ImageView
+                    android:id="@+id/iv_et_update"
+                    android:padding="2dp"
+                    android:src="@drawable/accept"
+                    android:layout_alignParentRight="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_marginTop="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="0.10">
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:visibility="visible"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:textColor="@android:color/background_dark"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Password" />
+
+                        <TextView
+                            android:textColor="@android:color/background_dark"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=":" />
+
+                        <EditText
+                            android:id="@+id/et_et_pwd"
+                            android:layout_width="0dp"
+                            android:inputType="textPassword"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center" />
+                    </LinearLayout>
+
+<!--                    <LinearLayout-->
+<!--                        android:id="@+id/et_shopTime"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_marginTop="10dp"-->
+<!--                        android:background="@drawable/submit_button"-->
+<!--                        android:orientation="horizontal"-->
+<!--                        android:padding="15dp" >-->
+<!--                        <AutoCompleteTextView-->
+<!--                            android:id="@+id/ATv_startTime"-->
+<!--                            android:hint="Start time"-->
+<!--                            android:layout_width="0dp"-->
+<!--                            android:layout_weight="1"-->
+<!--                            android:completionThreshold="1"-->
+<!--                            android:layout_height="wrap_content"/>-->
+<!--                        <AutoCompleteTextView-->
+<!--                            android:id="@+id/ATv_startDay"-->
+<!--                            android:hint="Start Day"-->
+<!--                            android:layout_width="0dp"-->
+<!--                            android:layout_weight="1"-->
+<!--                            android:completionThreshold="1"-->
+<!--                            android:layout_height="wrap_content"/>-->
+
+<!--                        <TextView-->
+<!--                            android:padding="5dp"-->
+<!--                            android:text="&#45;&#45;"-->
+<!--                            android:textStyle="bold"-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="wrap_content"/>-->
+<!--                        <AutoCompleteTextView-->
+<!--                            android:id="@+id/ATv_EndTime"-->
+<!--                            android:hint="End time"-->
+<!--                            android:layout_width="0dp"-->
+<!--                            android:completionThreshold="1"-->
+<!--                            android:layout_weight="1"-->
+<!--                            android:layout_height="wrap_content"/>-->
+<!--                        <AutoCompleteTextView-->
+<!--                            android:id="@+id/ATv_EndDay"-->
+<!--                            android:hint="End Day"-->
+<!--                            android:layout_width="0dp"-->
+<!--                            android:layout_weight="1"-->
+<!--                            android:completionThreshold="1"-->
+<!--                            android:layout_height="wrap_content"/>-->
+<!--                    </LinearLayout>-->
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:textColor="@android:color/background_dark"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Re-write Password" />
+
+                        <TextView
+                            android:textColor="@android:color/background_dark"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=":" />
+
+                        <EditText
+                            android:id="@+id/et_et_rpwd"
+                            android:layout_width="0dp"
+                            android:inputType="textPassword"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:textColor="@android:color/background_dark"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="A4 Size (INR)" />
+
+                        <TextView
+                            android:textColor="@android:color/background_dark"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=":" />
+
+                        <EditText
+                            android:id="@+id/et_et_a4"
+                            android:layout_width="0dp"
+                            android:inputType="number"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:textColor="@android:color/background_dark"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="A3 Size (INR)" />
+
+                        <TextView
+                            android:textColor="@android:color/background_dark"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=":" />
+
+                        <EditText
+                            android:id="@+id/et_et_a3"
+                            android:layout_width="0dp"
+                            android:inputType="number"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:textColor="@android:color/background_dark"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="A2 Size (INR)" />
+
+                        <TextView
+                            android:textColor="@android:color/background_dark"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=":" />
+
+                        <EditText
+                            android:id="@+id/et_et_a2"
+                            android:layout_width="0dp"
+                            android:inputType="number"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:textColor="@android:color/background_dark"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="A1 Size (INR)" />
+
+                        <TextView
+                            android:textColor="@android:color/background_dark"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=":" />
+
+                        <EditText
+                            android:id="@+id/et_et_a1"
+                            android:layout_width="0dp"
+                            android:inputType="number"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:textColor="@android:color/background_dark"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="BnW Print/Side (Paisa)" />
+
+                        <TextView
+                            android:textColor="@android:color/background_dark"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=":" />
+
+                        <EditText
+                            android:inputType="number"
+                            android:id="@+id/et_et_bwps"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:textColor="@android:color/background_dark"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Color Print/Side (Paisa)" />
+
+                        <TextView
+                            android:textColor="@android:color/background_dark"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=":" />
+
+                        <EditText
+                            android:inputType="number"
+                            android:id="@+id/et_et_cps"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:textColor="@android:color/background_dark"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="BnW Xerox/Side (Paisa)" />
+
+                        <TextView
+                            android:textColor="@android:color/background_dark"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=":" />
+
+                        <EditText
+                            android:id="@+id/et_et_bwxs"
+                            android:layout_width="0dp"
+                            android:inputType="number"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:textColor="@android:color/background_dark"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Color Xerox/Side (Paisa)" />
+
+                        <TextView
+                            android:textColor="@android:color/background_dark"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=":" />
+
+                        <EditText
+                            android:id="@+id/et_et_cxs"
+                            android:layout_width="0dp"
+                            android:inputType="number"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:textColor="@android:color/background_dark"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Small Spiral (0-35) (INR)" />
+
+                        <TextView
+                            android:textColor="@android:color/background_dark"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=":" />
+
+                        <EditText
+                            android:id="@+id/et_et_ssp"
+                            android:layout_width="0dp"
+                            android:inputType="number"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:textColor="@android:color/background_dark"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Medium Spiral (35-70) (INR)" />
+
+                        <TextView
+                            android:textColor="@android:color/background_dark"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=":" />
+
+                        <EditText
+                            android:id="@+id/et_et_msp"
+                            android:layout_width="0dp"
+                            android:inputType="number"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:textColor="@android:color/background_dark"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Large Spiral (>70) (INR)" />
+
+                        <TextView
+                            android:textColor="@android:color/background_dark"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=":" />
+
+                        <EditText
+                            android:id="@+id/et_et_lsp"
+                            android:inputType="number"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:textColor="@android:color/background_dark"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Cased In Wire Bound (INR)" />
+
+                        <TextView
+                            android:textColor="@android:color/background_dark"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=":" />
+
+                        <EditText
+                            android:id="@+id/et_et_ciwb"
+                            android:layout_width="0dp"
+                            android:inputType="number"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:textColor="@android:color/background_dark"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Coptic Bound (INR)" />
+
+                        <TextView
+                            android:textColor="@android:color/background_dark"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=":" />
+
+                        <EditText
+                            android:id="@+id/et_et_cb"
+                            android:inputType="number"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:textColor="@android:color/background_dark"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Japanese Bound (INR)" />
+
+                        <TextView
+                            android:textColor="@android:color/background_dark"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=":" />
+
+                        <EditText
+                            android:id="@+id/et_et_jb"
+                            android:layout_width="0dp"
+                            android:inputType="number"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:textColor="@android:color/background_dark"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Pamphlate Bound (INR)" />
+
+                        <TextView
+                            android:textColor="@android:color/background_dark"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=":" />
+
+                        <EditText
+                            android:id="@+id/et_et_pb"
+                            android:layout_width="0dp"
+                            android:inputType="number"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:textColor="@android:color/background_dark"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Sadle Stiching Bound (INR)" />
+
+                        <TextView
+                            android:textColor="@android:color/background_dark"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=":" />
+
+                        <EditText
+                            android:id="@+id/et_et_ssb"
+                            android:layout_width="0dp"
+                            android:inputType="number"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:textColor="@android:color/background_dark"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Section Sewn Bound (INR)" />
+
+                        <TextView
+                            android:textColor="@android:color/background_dark"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=":" />
+
+                        <EditText
+                            android:id="@+id/et_et_sswb"
+                            android:layout_width="0dp"
+                            android:inputType="number"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:textColor="@android:color/background_dark"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Hard Bound (INR)" />
+
+                        <TextView
+                            android:textColor="@android:color/background_dark"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=":" />
+
+                        <EditText
+                            android:id="@+id/et_et_hb"
+                            android:layout_width="0dp"
+                            android:inputType="number"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center" />
+                    </LinearLayout>
+
+                </LinearLayout>
+                </ScrollView>
+            </RelativeLayout>
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

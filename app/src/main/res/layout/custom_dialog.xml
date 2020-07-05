@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="15dp"
+    android:backgroundTint="@android:color/white"
+    android:background="@drawable/submit_button"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_customdialog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Clicking Delete, Your data will be deleted permanently. Want to Save data or Delete Permanently? "
+        android:textColor="@android:color/background_dark"
+        android:textSize="21sp" />
+
+    <LinearLayout
+        android:layout_marginTop="5dp"
+        android:id="@+id/rv_timeSend"
+        android:visibility="gone"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/tv_15"
+            android:text="15 min"
+            android:gravity="center"
+            android:padding="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/submit_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/tv_20"
+            android:text="20 min"
+            android:padding="10dp"
+            android:layout_weight="1"
+            android:layout_marginLeft="2dp"
+            android:gravity="center"
+            android:background="@drawable/submit_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/tv_30"
+            android:text="30 min"
+            android:padding="10dp"
+            android:layout_marginLeft="2dp"
+            android:background="@drawable/submit_button"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/tv_45"
+            android:text="45 min"
+            android:padding="10dp"
+            android:layout_marginLeft="2dp"
+            android:background="@drawable/submit_button"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/tv_60"
+            android:text="60 min"
+            android:gravity="center"
+            android:padding="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/submit_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/tv_75"
+            android:text="75 min"
+            android:padding="10dp"
+            android:layout_weight="1"
+            android:layout_marginLeft="2dp"
+            android:gravity="center"
+            android:background="@drawable/submit_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/tv_90"
+            android:text="90 min"
+            android:padding="10dp"
+            android:layout_marginLeft="2dp"
+            android:background="@drawable/submit_button"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/tv_120"
+            android:text="120 m"
+            android:padding="10dp"
+            android:layout_marginLeft="2dp"
+            android:background="@drawable/submit_button"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_height="wrap_content"/>
+        </LinearLayout>
+        <TextView
+            android:layout_marginTop="5dp"
+            android:id="@+id/tv_checkoutTime"
+            android:text="Time"
+            android:textSize="18sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/btn_cancel_popup"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/submit_button"
+            android:backgroundTint="@color/colorPrimary"
+            android:text="Cancel"
+            android:textAllCaps="false"
+            android:layout_alignParentLeft="true"
+            android:textColor="@android:color/white"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btn_delete_data"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_alignParentRight="true"
+
+            android:layout_marginTop="15dp"
+            android:layout_toRightOf="@+id/btn_cancel_popup"
+            android:background="@drawable/submit_button"
+            android:backgroundTint="@color/colorPrimaryDark"
+            android:text="Delete"
+            android:layout_marginLeft="15dp"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,826 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    android:id="@+id/cv_request"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:visibility="visible"
+    card_view:cardCornerRadius="3dp"
+    card_view:cardUseCompatPadding="true">
+
+    <LinearLayout
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:id="@+id/rv_requestTocome"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="0.10">
+
+            <LinearLayout
+                android:id="@+id/ll_print"
+                android:visibility="visible"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:textColor="@android:color/background_dark"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.3"
+                        android:text="Phone Number" />
+
+                    <TextView
+                        android:textColor="@android:color/background_dark"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=":" />
+
+                    <TextView
+                        android:id="@+id/tv_requests_mobileNumber"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:gravity="center" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:textColor="@android:color/background_dark"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.3"
+                        android:text="Total Page(s)" />
+
+                    <TextView
+                        android:textColor="@android:color/background_dark"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=":" />
+
+                    <TextView
+                        android:id="@+id/tv_requests_pageNumber"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:gravity="center" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:textColor="@android:color/background_dark"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.3"
+                        android:text="Spiral" />
+
+                    <TextView
+                        android:textColor="@android:color/background_dark"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=":" />
+
+                    <TextView
+                        android:id="@+id/tv_reuqests_spiral"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:gravity="center" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:textColor="@android:color/background_dark"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.3"
+                        android:text="Print type" />
+
+                    <TextView
+                        android:textColor="@android:color/background_dark"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=":" />
+
+                    <TextView
+                        android:id="@+id/tv_requests_printType"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:gravity="center" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:textColor="@android:color/background_dark"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.3"
+                        android:text="Side" />
+
+                    <TextView
+                        android:textColor="@android:color/background_dark"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=":" />
+
+                    <TextView
+                        android:id="@+id/tv_requests_Side"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:gravity="center" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:textColor="@android:color/background_dark"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.3"
+                        android:text="Number of copy" />
+
+                    <TextView
+                        android:textColor="@android:color/background_dark"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=":" />
+
+                    <TextView
+                        android:id="@+id/tv_requests_numberOfCopy"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:gravity="center" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:textColor="@android:color/background_dark"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.3"
+                        android:text="Bound" />
+
+                    <TextView
+                        android:textColor="@android:color/background_dark"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=":" />
+
+                    <TextView
+                        android:id="@+id/tv_requests_bound"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:gravity="center" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:textColor="@android:color/background_dark"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.3"
+                        android:text="Page Size" />
+
+                    <TextView
+                        android:textColor="@android:color/background_dark"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=":" />
+
+                    <TextView
+                        android:id="@+id/tv_requests_pageSize"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:gravity="center" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:textColor="@android:color/background_dark"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.3"
+                        android:text="Total Amount" />
+
+                    <TextView
+                        android:textColor="@android:color/background_dark"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=":" />
+
+                    <TextView
+                        android:id="@+id/tv_requests_totalAmount"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:gravity="center" />
+                </LinearLayout>
+
+<!--                <LinearLayout-->
+<!--                    android:id="@+id/ll_paidOnline_print"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:visibility="visible"-->
+<!--                    android:layout_height="wrap_content">-->
+
+<!--                    <TextView-->
+<!--                        android:textColor="@android:color/background_dark"-->
+<!--                        android:layout_width="0dp"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_weight="1"-->
+<!--                        android:text="Paid Online" />-->
+
+<!--                    <TextView-->
+<!--                        android:textColor="@android:color/background_dark"-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:text=":" />-->
+
+<!--                    <TextView-->
+<!--                        android:id="@+id/tv_requests_paidonline"-->
+<!--                        android:layout_width="0dp"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_weight="1"-->
+<!--                        android:gravity="center" />-->
+<!--                </LinearLayout>-->
+<!--                <LinearLayout-->
+<!--                    android:id="@+id/ll_CC_print"-->
+<!--                    android:visibility="visible"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content">-->
+
+<!--                    <TextView-->
+<!--                        android:textColor="@android:color/background_dark"-->
+<!--                        android:layout_width="0dp"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_weight="1"-->
+<!--                        android:text="Code to Confirm offline payment" />-->
+
+<!--                    <TextView-->
+<!--                        android:textColor="@android:color/background_dark"-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:text=":" />-->
+
+<!--                    <TextView-->
+<!--                        android:id="@+id/tv_requests_codeoffline"-->
+<!--                        android:layout_width="0dp"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_weight="1"-->
+<!--                        android:gravity="center" />-->
+<!--                </LinearLayout>-->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:textColor="@android:color/background_dark"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.3"
+                        android:text="Note" />
+
+                    <TextView
+                        android:textColor="@android:color/background_dark"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=":" />
+
+                    <TextView
+                        android:id="@+id/tv_requests_Note"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:gravity="center" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_xerox"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:textColor="@android:color/background_dark"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.3"
+                        android:text="Phone Number" />
+
+                    <TextView
+                        android:textColor="@android:color/background_dark"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=":" />
+
+                    <TextView
+                        android:id="@+id/tv_requests_mobileNumberXerox"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:gravity="center" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:textColor="@android:color/background_dark"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.3"
+                        android:text="Pages" />
+
+                    <TextView
+                        android:textColor="@android:color/background_dark"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=":" />
+
+                    <TextView
+                        android:id="@+id/tv_requests_pagesXerox"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:gravity="center" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:textColor="@android:color/background_dark"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.3"
+                        android:text="Spiral" />
+
+                    <TextView
+                        android:textColor="@android:color/background_dark"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=":" />
+
+                    <TextView
+                        android:id="@+id/tv_reuqests_spiralXerox"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:gravity="center" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:textColor="@android:color/background_dark"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.3"
+                        android:text="Print type" />
+
+                    <TextView
+                        android:textColor="@android:color/background_dark"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=":" />
+
+                    <TextView
+                        android:id="@+id/tv_requests_printTypeXerox"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:gravity="center" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:textColor="@android:color/background_dark"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.3"
+                        android:text="Side" />
+
+                    <TextView
+                        android:textColor="@android:color/background_dark"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=":" />
+
+                    <TextView
+                        android:id="@+id/tv_requests_SideXerox"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:gravity="center" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:textColor="@android:color/background_dark"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.3"
+                        android:text="Number of copy" />
+
+                    <TextView
+                        android:textColor="@android:color/background_dark"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=":" />
+
+                    <TextView
+                        android:id="@+id/tv_requests_numberOfCopyXerox"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:gravity="center" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:textColor="@android:color/background_dark"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.3"
+                        android:text="Total Page" />
+
+                    <TextView
+                        android:textColor="@android:color/background_dark"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=":" />
+
+                    <TextView
+                        android:id="@+id/tv_requests_numberOfpageXerox"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:gravity="center" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:textColor="@android:color/background_dark"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.3"
+                        android:text="Total Amount" />
+
+                    <TextView
+                        android:textColor="@android:color/background_dark"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=":" />
+
+                    <TextView
+                        android:id="@+id/tv_requests_totalAmountXerox"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:gravity="center" />
+                </LinearLayout>
+
+<!--                <LinearLayout-->
+<!--                    android:id="@+id/ll_po_xerox"-->
+<!--                    android:visibility="visible"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content">-->
+
+<!--                    <TextView-->
+<!--                        android:textColor="@android:color/background_dark"-->
+<!--                        android:layout_width="0dp"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_weight="1"-->
+<!--                        android:text="Paid Online" />-->
+
+<!--                    <TextView-->
+<!--                        android:textColor="@android:color/background_dark"-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:text=":" />-->
+
+<!--                    <TextView-->
+<!--                        android:id="@+id/tv_requests_paidonlineXerox"-->
+<!--                        android:layout_width="0dp"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_weight="1"-->
+<!--                        android:gravity="center" />-->
+<!--                </LinearLayout>-->
+<!--                <LinearLayout-->
+<!--                    android:id="@+id/ll_CC_xerox"-->
+<!--                    android:visibility="visible"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content">-->
+
+<!--                    <TextView-->
+<!--                        android:textColor="@android:color/background_dark"-->
+<!--                        android:layout_width="0dp"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_weight="1"-->
+<!--                        android:text="Code to Confirm offline payment" />-->
+
+<!--                    <TextView-->
+<!--                        android:textColor="@android:color/background_dark"-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:text=":" />-->
+
+<!--                    <TextView-->
+<!--                        android:id="@+id/tv_requests_codeofflineXerox"-->
+<!--                        android:layout_width="0dp"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_weight="1"-->
+<!--                        android:gravity="center" />-->
+<!--                </LinearLayout>-->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:textColor="@android:color/background_dark"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.3"
+                        android:text="Note" />
+
+                    <TextView
+                        android:textColor="@android:color/background_dark"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=":" />
+
+                    <TextView
+                        android:id="@+id/tv_requests_NoteXerox"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:gravity="center" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/ll_book"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:textColor="@android:color/background_dark"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.3"
+                        android:text="Mobile Number" />
+
+                    <TextView
+                        android:textColor="@android:color/background_dark"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=":" />
+
+                    <TextView
+                        android:id="@+id/tv_requests_ShopContactBook"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:gravity="center" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:textColor="@android:color/background_dark"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.3"
+                        android:text="Book Name" />
+
+                    <TextView
+                        android:textColor="@android:color/background_dark"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=":" />
+
+                    <TextView
+                        android:id="@+id/tv_requests_BookNam"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:gravity="center" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:textColor="@android:color/background_dark"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.3"
+                        android:text="Book Price" />
+
+                    <TextView
+                        android:textColor="@android:color/background_dark"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=":" />
+
+                    <TextView
+                        android:id="@+id/tv_reuqests_BookPrice"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:gravity="center" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/rv_request"
+        android:layout_weight="0.90"
+        android:layout_gravity="center_horizontal"
+        android:gravity="right">
+
+        <Button
+
+            android:id="@+id/btn_requests_approve"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:visibility="visible"
+            android:background="@drawable/accept"
+            android:layout_alignParentRight="true"
+            android:padding="2dp"
+
+             />
+
+        <Button
+
+            android:id="@+id/btn_requests_reject"
+            android:layout_width="40dp"
+            android:background="@drawable/cancel"
+            android:visibility="visible"
+            android:layout_height="40dp"
+            android:layout_below="@+id/btn_requests_approve"
+            android:layout_alignParentRight="true"
+            android:padding="2dp"
+            />
+        <Button
+
+            android:layout_below="@+id/btn_requests_reject"
+            android:id="@+id/btn_emergency"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:visibility="visible"
+            android:background="@drawable/emergency"
+            android:layout_alignParentRight="true"
+            android:padding="2dp" />
+
+        <Button
+            android:layout_below="@+id/btn_requests_reject"
+            android:id="@+id/img_EmergencyPending"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:visibility="gone"
+            android:background="@drawable/emergency"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:padding="2dp" />
+
+        <ImageView
+            android:padding="5dp"
+            android:visibility="gone"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/download"
+            android:layout_below="@+id/img_EmergencyPending"
+            android:id="@+id/iv_download"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <ImageView
+            android:src="@drawable/ic_send"
+            android:padding="5dp"
+            android:layout_below="@+id/iv_download"
+            android:layout_margin="7dp"
+            android:visibility="gone"
+            android:id="@+id/img_Xeroxsend"
+            android:layout_centerInParent="true"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/submit_button"
+            android:backgroundTint="@color/colorPrimary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <ImageView
+            android:src="@drawable/done"
+            android:padding="5dp"
+            android:layout_below="@+id/iv_download"
+            android:layout_alignParentBottom="true"
+            android:visibility="gone"
+            android:id="@+id/img_xeroxDone"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <Button
+            android:layout_below="@+id/btn_requests_reject"
+            android:id="@+id/btn_requests_book"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:visibility="gone"
+            android:background="@drawable/accept"
+            android:layout_alignParentRight="true"
+            android:padding="2dp" />
+
+
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

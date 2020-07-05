@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".Activity.Fragment.RequestsFragment">
+
+    <LinearLayout
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_weight="1"
+            android:text="Print Request : "
+            android:layout_width="0dp"
+            android:textColor="@android:color/background_dark"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_height="match_parent"/>
+
+        <ImageView
+            android:src="#81D4FA"
+            android:layout_weight="0.5"
+            android:padding="2dp"
+            android:layout_width="20dp"
+            android:layout_height="20dp"/>
+        <TextView
+            android:layout_weight="1"
+            android:text="Xerox Request: "
+            android:layout_width="0dp"
+            android:textColor="@android:color/background_dark"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_height="match_parent"/>
+
+        <ImageView
+            android:src="#E0F7FA"
+            android:layout_weight="0.5"
+            android:layout_width="20dp"
+            android:layout_height="20dp"/>
+
+        <TextView
+            android:id="@+id/tv_bookcolor"
+            android:visibility="visible"
+            android:layout_weight="1"
+            android:text="Book Buy Request: "
+            android:layout_width="0dp"
+            android:textColor="@android:color/background_dark"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_height="match_parent"/>
+
+        <ImageView
+            android:id="@+id/img_bookcolor"
+            android:src="#33AAFF"
+            android:visibility="visible"
+            android:layout_weight="0.5"
+            android:layout_width="20dp"
+            android:layout_height="20dp"/>
+
+    </LinearLayout>
+
+<!--    <RelativeLayout-->
+<!--        android:id="@+id/rv_notFound"-->
+<!--        android:visibility="gone"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:background="@android:color/white"-->
+<!--        android:layout_height="match_parent">-->
+<!--    <ImageView-->
+<!--        android:foregroundGravity="center"-->
+<!--        android:src="@drawable/notfound"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="match_parent"/>-->
+
+<!--    </RelativeLayout>-->
+    <ScrollView
+        android:layout_marginTop="15sp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_dhruviRequest"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+             />
+    </ScrollView>
+
+</LinearLayout>
+
+
+
+
+
+    <!--    <LinearLayout-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:orientation="horizontal">-->
+
+    <!--        <TextView-->
+    <!--            android:layout_width="0dp"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:layout_gravity="center"-->
+    <!--            android:layout_weight="1"-->
+    <!--            android:text="Mobile Number"-->
+    <!--            android:textColor="@color/cardview_dark_background"-->
+    <!--            android:textStyle="bold" />-->
+
+    <!--        <TextView-->
+    <!--            android:layout_width="0dp"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:layout_weight="1"-->
+    <!--            android:gravity="center"-->
+    <!--            android:text="Pages"-->
+    <!--            android:textColor="@color/cardview_dark_background"-->
+    <!--            android:textStyle="bold" />-->
+
+    <!--        <TextView-->
+    <!--            android:layout_width="0dp"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:layout_weight="1"-->
+    <!--            android:gravity="center"-->
+    <!--            android:text="Spiral"-->
+    <!--            android:textColor="@color/cardview_dark_background"-->
+    <!--            android:textStyle="bold" />-->
+
+    <!--        <TextView-->
+    <!--            android:layout_width="0dp"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:layout_weight="1"-->
+    <!--            android:textColor="@color/cardview_dark_background"-->
+    <!--            android:gravity="center"-->
+    <!--            android:text="Type"-->
+    <!--            android:textStyle="bold" />-->
+
+    <!--        <TextView-->
+    <!--            android:layout_width="0dp"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:layout_weight="1"-->
+    <!--            android:gravity="center"-->
+    <!--            android:text="Side"-->
+    <!--            android:textColor="@color/cardview_dark_background"-->
+    <!--            android:textStyle="bold" />-->
+
+
+
+    <!--        <TextView-->
+    <!--            android:layout_width="0dp"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:layout_weight="1"-->
+    <!--            android:gravity="center"-->
+    <!--            android:text="Copy"-->
+    <!--            android:textColor="@color/cardview_dark_background"-->
+    <!--            android:textStyle="bold" />-->
+
+    <!--        <TextView-->
+    <!--            android:layout_width="0dp"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:layout_weight="1"-->
+    <!--            android:gravity="center"-->
+    <!--            android:text="Approve"-->
+    <!--            android:textColor="@color/cardview_dark_background"-->
+    <!--            android:textStyle="bold" />-->
+
+    <!--        <TextView-->
+    <!--            android:layout_width="0dp"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:layout_weight="1"-->
+    <!--            android:gravity="center"-->
+    <!--            android:text="Reject"-->
+    <!--            android:textColor="@color/cardview_dark_background"-->
+    <!--            android:textStyle="bold" />-->
+    <!--    </LinearLayout>-->

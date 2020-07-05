@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".Activity.Fragment.RecordFragment">
+
+    <CalendarView
+        android:id="@+id/calendar_Record"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center" />
+
+    <RelativeLayout
+        android:padding="3dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/tv_RecordDate"
+            android:layout_width="wrap_content"
+            android:textStyle="bold"
+            android:textSize="22sp"
+            android:textColor="@android:color/background_dark"
+            android:layout_alignParentLeft="true"
+            android:text="DHruvi"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/tv_RecordTotal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:layout_toRightOf="@+id/tv_RecordDate"
+            android:text="Date"
+            android:textColor="@android:color/background_dark"
+            android:textSize="18sp" />
+
+    </RelativeLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_recordTillDate"
+            android:layout_margin="3dp"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            android:background="@drawable/submit_button"
+            android:padding="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_requests"
+            android:icon="@drawable/request"
+            android:title="Requests" />
+        <item
+            android:id="@+id/nav_pending"
+            android:icon="@drawable/pending"
+            android:title="Pending" />
+        <item
+            android:id="@+id/nav_bookList"
+            android:icon="@drawable/bookqueue"
+            android:title="Book Buy Record" />
+        <item
+            android:id="@+id/nav_record"
+            android:icon="@drawable/record"
+            android:title="Record" />
+        <item
+            android:id="@+id/nav_addBook"
+            android:icon="@drawable/addbook"
+            android:title="Add Book" />
+
+
+    </group>
+</menu>
+
+
+<!--1.Home
+Gallery
+Alideshow-->

@@ -1,0 +1,586 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".Fragment.SignUpFragment">
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:gravity="center"
+            android:text="Sign Up"
+
+            android:textColor="@color/colorPrimary"
+            android:textSize="35sp"
+            android:textStyle="bold" />
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="30dp"
+                android:orientation="vertical"
+                android:padding="3dp">
+
+                <EditText
+                    android:id="@+id/et_fullName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/submit_button"
+                    android:hint="Enter Your Full Name Here"
+                    android:padding="15dp" />
+
+                <EditText
+                    android:id="@+id/et_EmailID"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/submit_button"
+                    android:hint="Enter Email Id Here"
+                    android:padding="15dp" />
+
+
+                <EditText
+                    android:id="@+id/et_userName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:maxLength="10"
+                    android:background="@drawable/submit_button"
+                    android:hint="Enter Mobile Number Here"
+                    android:inputType="number"
+                    android:padding="15dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/submit_button"
+                    android:padding="15dp">
+
+                    <RadioGroup
+                        android:id="@+id/radiogroup"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_weight="1.5"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/rb_male"
+                            android:layout_weight="1"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:checked="false"
+                            android:text="Male" />
+
+                        <RadioButton
+                            android:id="@+id/rb_female"
+                            android:layout_weight="1"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:text="Female" />
+
+                    </RadioGroup>
+
+
+                </LinearLayout>
+                <EditText
+                    android:id="@+id/et_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/submit_button"
+                    android:hint="Enter PassWord Here "
+                    android:inputType="textPassword"
+                    android:padding="15dp" />
+
+                <EditText
+                    android:id="@+id/et_C_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/submit_button"
+                    android:hint="RE- Enter PassWord Here "
+                    android:inputType="textPassword"
+                    android:padding="15dp" />
+
+                <EditText
+                    android:id="@+id/et_shopName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/submit_button"
+                    android:hint="Enter Shop Name"
+                    android:padding="15dp" />
+
+                <LinearLayout
+                    android:id="@+id/et_shopTime"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/submit_button"
+                    android:orientation="horizontal"
+                    android:padding="15dp" >
+                    <AutoCompleteTextView
+                        android:id="@+id/ATv_startTime"
+                        android:hint="Start time"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:completionThreshold="1"
+                        android:layout_height="wrap_content"/>
+                    <TextView
+                        android:padding="5dp"
+                        android:text="--"
+                        android:textStyle="bold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+
+                    <AutoCompleteTextView
+                        android:id="@+id/ATv_EndTime"
+                        android:hint="End time"
+                        android:layout_width="0dp"
+                        android:completionThreshold="1"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:padding="5dp"
+                        android:text="on"
+                        android:textStyle="bold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+
+                    <AutoCompleteTextView
+                        android:id="@+id/ATv_startDay"
+                        android:hint="Start Day"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:completionThreshold="1"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:padding="5dp"
+                        android:text="--"
+                        android:textStyle="bold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                    <AutoCompleteTextView
+                        android:id="@+id/ATv_EndDay"
+                        android:hint="End Day"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:completionThreshold="1"
+                        android:layout_height="wrap_content"/>
+                </LinearLayout>
+
+                <EditText
+                    android:id="@+id/et_aadhar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:maxLength="12"
+                    android:background="@drawable/submit_button"
+                    android:inputType="number"
+                    android:hint="Enter your aadhar number and\nattach it below"
+                    android:padding="15dp"/>
+
+                <ImageView
+                    android:id="@+id/iv_aadhar"
+                    android:layout_width="180dp"
+                    android:layout_height="180dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="15dp"
+                    android:src="@drawable/ic_launcher_foreground" />
+
+                <EditText
+                    android:id="@+id/et_address"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/submit_button"
+                    android:hint="Enter Full Address "
+                    android:padding="15dp" />
+
+                <EditText
+                    android:id="@+id/et_licence"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/submit_button"
+                    android:hint="NZ/D/UDHNA/******/"
+                    android:padding="15dp" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/iv_licence"
+                    android:layout_width="180dp"
+                    android:layout_height="180dp"
+                    android:layout_centerInParent="true"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="15dp"
+                    android:src="@drawable/ic_launcher_foreground" />
+
+                    <ImageView
+                        android:id="@+id/iv_example"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentRight="true"
+                        android:src="@drawable/example"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"/>
+
+                </RelativeLayout>
+
+                <LinearLayout
+
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:id="@+id/et_colorprintPrice"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/submit_button"
+                        android:hint="CPP/Ss(paisa)"
+                        android:inputType="number"
+                        android:padding="15dp" />
+                    <EditText
+                        android:id="@+id/et_BW_printPrice"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_marginLeft="4dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/submit_button"
+                        android:hint="BwPP/Ss (paisa)"
+                        android:inputType="number"
+                        android:padding="15dp" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                <EditText
+                    android:id="@+id/et_ColorxeroxPrice"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/submit_button"
+                    android:hint="CXP/Ss(paisa)"
+                    android:inputType="number"
+                    android:padding="15dp" />
+                    <EditText
+                    android:id="@+id/et_BWxeroxPrice"
+                    android:layout_width="0dp"
+                        android:layout_marginLeft="4dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/submit_button"
+                    android:hint="BwXP/Ss(paisa)"
+                    android:inputType="number"
+                    android:padding="15dp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="369dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/et_A4"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+
+                        android:layout_marginTop="10dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/submit_button"
+                        android:hint="A4"
+                        android:inputType="number"
+                        android:padding="15dp" />
+
+                    <EditText
+                        android:id="@+id/et_A3"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="1dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/submit_button"
+                        android:hint="A3"
+                        android:inputType="number"
+                        android:padding="15dp" />
+
+                    <EditText
+                        android:id="@+id/et_A2"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="1dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/submit_button"
+                        android:hint="A2"
+                        android:inputType="number"
+                        android:padding="15dp" />
+
+                    <EditText
+                        android:id="@+id/et_A1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="1dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/submit_button"
+                        android:hint="A1"
+                        android:inputType="number"
+                        android:padding="15dp" />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="369dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/et_smallSpiral"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+
+                        android:layout_marginTop="10dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/submit_button"
+                        android:hint="Small Spiral"
+                        android:inputType="number"
+                        android:padding="15dp" />
+
+                    <EditText
+                        android:id="@+id/et_LargeSpiral"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="1dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/submit_button"
+                        android:hint="Large Spiral"
+                        android:inputType="number"
+                        android:padding="15dp" />
+
+                    <EditText
+                        android:id="@+id/et_MeduimSpiral"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="1dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/submit_button"
+                        android:hint="Medium Spiral"
+                        android:inputType="number"
+                        android:padding="15dp" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:id="@+id/et_sadleStiching"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+
+                        android:layout_marginTop="10dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/submit_button"
+                        android:hint="Saddle-stiching"
+                        android:inputType="number"
+                        android:padding="15dp" />
+                    <EditText
+                        android:id="@+id/et_sectionSewn"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/submit_button"
+                        android:hint="section Sewn"
+                        android:inputType="number"
+                        android:padding="15dp" />
+                    <EditText
+                        android:id="@+id/et_CasedInWiro"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/submit_button"
+                        android:hint="Cased in wiro"
+                        android:inputType="number"
+                        android:padding="15dp" />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:id="@+id/et_Pamphlet"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+
+                        android:layout_marginTop="10dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/submit_button"
+                        android:hint="Pamphlet"
+                        android:inputType="number"
+                        android:padding="15dp" />
+                    <EditText
+                        android:id="@+id/et_Coptic"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/submit_button"
+                        android:hint="Coptic"
+                        android:inputType="number"
+                        android:padding="15dp" />
+                    <EditText
+                        android:id="@+id/et_Japanese"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/submit_button"
+                        android:hint="Japanese"
+                        android:inputType="number"
+                        android:padding="15dp" />
+
+                </LinearLayout>
+
+                <EditText
+                    android:id="@+id/et_hard"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+
+                    android:background="@drawable/submit_button"
+                    android:hint="Hard Bound"
+                    android:inputType="number"
+                    android:padding="15dp" />
+                <EditText
+                    android:id="@+id/et_otp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:maxLength="6"
+                    android:background="@drawable/submit_button"
+                    android:hint="Enter OTP Here"
+                    android:inputType="number"
+                    android:padding="15dp" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@+id/tv_Iagree">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:id="@+id/tv_terms"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginTop="5dp"
+                                android:padding="5dp"
+                                android:text="hiiii"
+                                android:textSize="12sp" />
+                        </RelativeLayout>
+
+                    </ScrollView>
+
+                    <TextView
+                        android:id="@+id/tv_Iagree"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/cb_signup"
+                        android:text="I agree" />
+
+                    <androidx.appcompat.widget.AppCompatCheckBox
+                        android:id="@+id/cb_signup"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_marginBottom="15dp"
+                    android:layout_height="match_parent"
+                    android:padding="15dp">
+
+                    <Button
+                        android:id="@+id/btn_SendSignUpCode"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:background="@drawable/submit_button"
+                        android:backgroundTint="@color/colorPrimary"
+                        android:text="Send Code"
+                        android:textAllCaps="false"
+                        android:textColor="@android:color/white"
+                        android:textStyle="bold" />
+
+                    <Button
+                        android:id="@+id/btn_signUp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:background="@drawable/submit_button"
+                        android:backgroundTint="@color/colorPrimary"
+                        android:text="Sign Up"
+                        android:textAllCaps="false"
+                        android:textColor="@android:color/white"
+                        android:textStyle="bold" />
+
+                </RelativeLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</LinearLayout>

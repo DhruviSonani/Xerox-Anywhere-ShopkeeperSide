@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragment.LoginFragment">
+    <TextView
+        android:layout_marginTop="15dp"
+        android:text="Login"
+        android:textStyle="bold"
+        android:textSize="35sp"
+        android:gravity="center"
+        android:textColor="@color/colorPrimary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <LinearLayout
+        android:padding="25dp"
+        android:layout_marginTop="30dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <EditText
+
+            android:padding="15dp"
+            android:background="@drawable/submit_button"
+            android:hint="Enter Mobile Number Here"
+            android:inputType="number"
+            android:maxLength="10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/et_userName"/>
+
+<!--    </LinearLayout>-->
+        <EditText
+            android:layout_marginTop="10dp"
+            android:hint="Enter PassWord Here "
+            android:id="@+id/et_password"
+            android:inputType="textPassword"
+            android:padding="15dp"
+            android:background="@drawable/submit_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+
+        <EditText
+            android:layout_marginTop="10dp"
+            android:hint="Enter Verification Code Here "
+            android:id="@+id/et_verificationCode"
+            android:inputType="number"
+            android:padding="15dp"
+            android:maxLength="6"
+            android:background="@drawable/submit_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/tv_doSignUp"
+            android:padding="15dp"
+            android:gravity="right"
+            android:textSize="15sp"
+            android:text="Not User yet? SignUp here"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+
+        <RelativeLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:text="Send Verification Code"
+                android:textAllCaps="false"
+                android:background="@drawable/submit_button"
+                android:backgroundTint="@android:color/holo_orange_light"
+                android:padding="15dp"
+                android:textColor="@android:color/white"
+                android:textStyle="bold"
+                android:layout_centerInParent="true"
+                android:id="@+id/btn_sendCode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <Button
+                android:text="Login"
+                android:layout_marginTop="5dp"
+                android:layout_below="@+id/btn_sendCode"
+                android:textAllCaps="false"
+                android:background="@drawable/submit_button"
+                android:backgroundTint="@color/colorPrimary"
+                android:textColor="@android:color/white"
+                android:textStyle="bold"
+                android:layout_centerInParent="true"
+                android:id="@+id/btn_login"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

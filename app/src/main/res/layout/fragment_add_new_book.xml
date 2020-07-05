@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Activity.Fragment.AddNewBookFragment">
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:scaleType="fitXY"
+            android:id="@+id/img_addBook"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_centerInParent="true"
+            android:src="@drawable/ic_launcher_foreground" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_marginTop="25dp"
+        android:padding="25dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+    <EditText
+
+        android:id="@+id/et_bookName"
+        android:hint="Book Name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <EditText
+        android:id="@+id/et_bookPrice"
+        android:layout_width="match_parent"
+        android:hint="Book Price"
+        android:inputType="number"
+        android:layout_height="wrap_content"/>
+        <LinearLayout
+            android:layout_marginTop="15dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <Button
+            android:text="Add"
+            android:textAllCaps="false"
+            android:layout_width="wrap_content"
+            android:textSize="20sp"
+            android:padding="15sp"
+            android:backgroundTint="@color/colorPrimary"
+            android:textColor="@android:color/white"
+            android:background="@drawable/submit_button"
+            android:textStyle="bold"
+
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_addNewBook"/>
+        <Button
+            android:text="Cancel"
+            android:id="@+id/btn_cancelNewBook"
+            android:textAllCaps="false"
+            android:visibility="visible"
+            android:textSize="20sp"
+            android:background="@drawable/submit_button"
+            android:layout_marginTop="5dp"
+            android:backgroundTint="@color/colorPrimaryDark"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        </LinearLayout>
+    </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>
